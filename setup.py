@@ -1,21 +1,34 @@
+from __future__ import print_function
 from setuptools import setup, find_packages
+import sys
 
 setup(
-name = 'iptoolsbox',
-version = '0.1',
-keywords = ('simple', 'test', 'iptools'),
-description = '',
-classifiers=[
-'Development Status :: 3 – Alpha',
-'Intended Audience :: Developers',
-'Topic :: Software Development :: Libraries',
-'License :: OSI Approved :: MIT License',
-'Programming Language :: Python :: 3.9',
-],
-license = 'MIT License',
-install_requires = [''],
-author = 'EarthlyEric@ReLoad Dev',
-author_email = 'admin@reload-dev.ml',
-packages = find_packages(),
-platforms = 'any',
+    name="packer",
+    version="0.1.0",
+    author="",  #作者名字
+    author_email="",
+    description="Python Framework.",
+    license="MIT",
+    url="",  #github地址或其他地址
+    packages=find_packages(),
+    include_package_data=True,
+    classifiers=[
+        "Environment :: Web Environment",
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Natural Language :: Chinese',
+        'Operating System :: MacOS',
+        'Operating System :: Microsoft',
+        'Operating System :: POSIX',
+        'Operating System :: Unix',
+        'Topic :: NLP',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+    ],
+    install_requires=[
+            'pandas>=0.20.0',  #所需要包的版本號
+            'numpy>=1.14.0'   #所需要包的版本號
+    ],
+    zip_safe=True,
 )
